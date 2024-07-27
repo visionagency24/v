@@ -1,0 +1,367 @@
+/*
+Theme Name: Nopixel
+Theme URI: http://shtheme.com/demosd/nopixel
+Author: Shtheme
+Author URI: https://themeforest.net/user/shtheme
+Description: In 2021, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: nopixel
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* ========TABLE OF CONTENTS==========
+00. Body, links, hgroup, paragraphs, general styles
+01. Fixed header & Navigation
+02. Section Intro (Home)
+03. Section About
+04. Section Resume
+05. Section Portfolio
+06. Section Blog
+07. Section Contact
+08. Footer
+09. Loader
+10. Responsive design
+
+/*--------------------------------------------------
+    00. Body, links, hgroup, paragraphs, general styles
+---------------------------------------------------*/
+
+.comment-form-cookies-consent {
+	display: none;
+}
+
+.nopixel-comment-section h3.comments-title,
+.nopixel-comment-section .comment-respond h3.comment-reply-title {
+	font-size: 25px;
+	color: #1b1b1b;
+	margin-bottom: 30px;
+}
+
+a.comment-reply-link {
+	font-size: 14px;
+	color: #6610f2;
+	margin: 0;
+	font-weight: 400;
+}
+
+.comment-respond form input.btn-curve {
+	margin-left: 15px;
+	color: #fff;
+}
+
+.comment-respond form input.btn-curve:hover {
+    background: #1b1b1b;
+}
+
+p.logged-in-as {
+	margin-left: 15px;
+}
+
+div.info, p.distance {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+.nopixel-blog .content {
+    padding: 0px;
+}
+
+.blog-content {
+	margin-bottom: 45px;
+	background: #fff;
+}
+
+.blog-content .cont {
+	text-align: left;
+	padding: 30px!important;
+	padding-bottom: 40px!important;
+	box-shadow: 0 25px 75px rgb(0 0 0 / 5%);
+}
+
+div.info {
+	font-size: 12px;
+	letter-spacing: 2px;
+	color: #888;
+	font-family: 'Didact Gothic', sans-serif;
+	text-transform: uppercase;
+}
+
+div.info a[rel="author"] {
+	color: #6610f2;
+	text-transform: uppercase;
+}
+
+p.distance {
+	margin-bottom: 0px;
+	margin-left: 3px;
+	margin-right: 3px;
+	font-size: 13px;
+}
+
+.team div.info {
+    width: 100%;
+}
+
+.team .info .social p {
+    text-transform: capitalize;
+    letter-spacing: 0px;
+}
+
+.nopixel-sidebar-part {
+	max-width: 400px;
+	box-shadow: 0 25px 75px rgb(0 0 0 / 5%);
+	padding: 30px;
+	background: #fff;
+}
+
+.nopixel-sidebar-search-form {
+    position: relative;
+}
+
+.nopixel-sidebar-search-form input[type="search"] {
+    max-width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    padding: 7px 15px;
+    height: auto;
+    background-color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: block;
+    width: 100%;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #000;
+    background-image: none;
+    border: 1px solid #ececec;
+}
+
+.nopixel-sidebar-search-submit {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: none;
+    border: 0;
+    padding: 13px;
+    font-size: 16px;
+    color: #fff;
+    background: #6610f2;
+    border-radius: 0;
+    border: 1px solid transparent;
+    margin-top: 0px;
+}
+
+.nopixel-sidebar-search-submit:hover {
+	background: #1b1b1b;
+	color: #fff;
+}
+
+.single-widget h3.widget-title {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #1b1b1b;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.5em;
+}
+
+.latest a .txt1 {
+	line-height: 1.7em;
+	letter-spacing: 0.5px;
+	font-size: 13px;
+	text-transform: capitalize!important;
+	color: #000;
+}
+
+.latest a:hover .txt1 {
+    color: #6610f2;
+}
+
+.latest a .txt2 {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.latest {
+    margin-bottom: 18px;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 15px;
+}
+
+.nopixel-sidebar-block-content > .latest:last-child {
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.nopixel-sidebar-block-latest-posts h3.widget-title {
+	margin-bottom: 30px;
+}
+
+.mb-45 {
+	margin-bottom: 45px;
+}
+
+.nopixel-blog .content .cont h5 {
+	font-size: 24px;
+	letter-spacing: 2px;
+}
+
+.wp-tag-cloud li {
+    font-size: 15px;
+    text-shadow: none;
+    padding: 7px 14px 10px 14px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    line-height: 1.75em;
+    font-weight: 300;
+    color: #fff;
+    -webkit-transition: background-color .15s ease-out;
+    transition: background-color .15s ease-out;
+    background-color: #6610f2;
+    margin: 3px 1px;
+    border: none;
+    display: inline-block;
+}
+
+.wp-tag-cloud li:hover {
+    background: #1b1b1b;
+}
+
+.wp-tag-cloud li a {
+	font-size: 15px!important;
+}
+
+.widget_categories ul li {
+    padding: 5px 0;
+    border-bottom: 1px dotted #ddd;
+    line-height: 32px;
+}
+
+.widget_categories ul li:last-child {
+    padding-bottom: 0px;
+    border-bottom: none;
+}
+
+.widget_categories ul li a {
+	font-size: 15px;
+    color: #1b1b1b;
+}
+
+.widget_categories ul li:hover a {
+	color: #6610f2;
+}
+
+.search-custom h4 {
+    color: #1b1b1b;
+    letter-spacing: 1px;
+    line-height: 36px;
+}
+
+.search-custom .nopixel-sidebar-search-form  {
+    max-width: 70%;
+}
+
+.dropdown .nav-link i {
+    padding-left: 5px;
+}
+
+.navbar .navbar-nav .current-menu-parent > a,
+.navbar .navbar-nav .active a {
+    color: #6610f2 !important;
+}
+
+.comming form input[type="submit"] {
+        background-color: #6610f2;
+    padding: 8px 20px;
+    border-radius: 0px;
+    color: #fff;
+    border: 0;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+    outline: none;
+    width: 125px;
+        line-height: 1.5em;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.comming form .your-email {
+    width: 100%;
+}
+
+.contact form span.your-message textarea {
+    height: 120px;   
+}
+
+.contact form input[type="submit"] {
+        font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 2;
+    -webkit-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+
+.contact form input[type="submit"]:hover {
+    border-color: #1b1b1b;
+    background: #1b1b1b;
+}
+
+.logged-in .navbar {
+    top: 32px;
+}
+
+.logged-in .nav-scroll {
+    top: -68px;
+}
+
+.dark-blog .info span, .dark-blog .text-content,
+.dark-blog .content .cont .more, .dark-blog .content .cont .info div {
+    color: #fff;
+}
+
+.nopixel-pagination-wrap span {
+    background: transparent;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    color: #888;
+    font-weight: 300;
+    border: 1px solid #ececec;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    border-radius: 100%;
+        background-color: transparent;
+    border: 1px solid #6610f2;
+    color: #6610f2;
+}
+
+.line-vr-section {
+    margin: -45px auto!important;
+}
+.js .animate-box {
+    opacity: 1!important;
+}
